@@ -1,0 +1,18 @@
+body{
+    background-color: rgb(229, 226, 226);
+     text-align: center; 
+}
+.container{
+    background-color: rgb(228, 243, 255);
+    border: 1px solid rgb(12, 51, 124);
+    width: 97%;
+    margin: auto;
+}
+.row{
+    border: 2px solid rgb(6, 93, 207);
+    margin: 15px;
+}
+.col, .col-12, .col-lg-4{
+    border: 3px solid rgb(20, 89, 192);
+    margin: 10px;
+}
