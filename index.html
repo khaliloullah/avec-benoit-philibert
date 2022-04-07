@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
     <head>
         <title>hello, world!</title>
         <meta charset="UTF-8">
@@ -23,13 +23,14 @@
 
 
         <!-- HEADER -->
-        <div class=" bg-dark">
+        <div class="bg-dark">
           <div class="container">
             <div class="row">
               <nav class="col navbar navbar-expand-lg navbar-dark">
                 <a class="navbar-brand" href="index.html">
-                <img src="outils/logo.png" width="50 -sm-30" height="50 -sm-30" alt="Site logo">
-                 Info School</a>
+                <img src="outils/logo.png" width="50" height="50" alt="Site logo">
+                 Info School
+                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -39,7 +40,7 @@
                       <a class="nav-link" href="index.html">Acceuil</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Cours</a>
+                      <a class="nav-link" href="lessons.html">Cours</a>
                     </li>
                   </ul>
                 </div>
@@ -52,38 +53,49 @@
         <div class="container">
           <div class="row">
             <div class="col">
-              <div class="jumbotron jumbotron-fluid">
-                <div class="container">
-                  <div class="jumbotron text-center text-dark">
-                    <h1>Bienvenue Sur Info School !</h1>
+              <div id="carouselControls" class="carousel slide mb-3 shadow" data-side="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="outils/apprenant.jpg" class="d-block w-100" alt="eleve1">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="outils/apprenant2.jpg" class="d-block w-100" alt="eleve2">
                   </div>
                 </div>
+                <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Précédant</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Suivant</span>
+                </a>
               </div>
             </div>
           </div>
           <div class="row">
             <div class="col-12 col-md-4">
-              <div class="card">
+              <div class="card  m-3 mb-lg-0 border-dark">
                 <img class="card-img-top" src="outils/certificate.png" alt="logo de certificate">
-                <div class="card-boy text-center">
+                <div class="card-boy text-center shadow">
                   <h5 class="card-title">Denevez Diplomés</h5>
                   <p class="card-text">De zéro a heros, obtenez un diplome en<br>informatique.</p>
                 </div>
               </div>
             </div>
             <div class="col-12 col-md-4">
-              <div class="card">
+              <div class="card  m-3 mb-lg-0 border-dark">
                 <img class="card-img-top" src="outils/instruction.png" alt="logo d'instructior">
-                <div class="card-boy text-center">
+                <div class="card-boy text-center shadow">
                   <h5 class="card-title">Formateurs de Qualitée</h5>
                   <p class="card-text">Tous nos cours sont realisés par les<br>meilleurs informaticiens.</p>
                 </div>
               </div>
             </div>
             <div class="col-12 col-md-4">
-              <div class="card">
+              <div class="card  m-3 mb-lg-0 border-dark">
                 <img class="card-img-top" src="outils/job.png" alt="logo de job">
-                <div class="card-boy text-center">
+                <div class="card-boy text-center shadow">
                   <h5 class="card-title">Un Travail Garanti</h5>
                   <p class="card-text">Nous vous garantissons un emploi à<br>l'issu de votre formation.</p>
                 </div>
@@ -92,16 +104,16 @@
           </div>
         </div>
         <!-- PIED DU PAGE -->
-        <div class="bg-light text-info">
+        <div class="bg-light text-info mt-5">
           <div class="container pt-3">
             <div class="row">
               <div class="col">
                 <ul class="list-inline font-weight-bold font-italic text-center">
-                  <li class="list-inline-item">A propos</li>
+                  <li class="list-inline-item"><a href="#">A propos</a></li>
                   <li class="list-inline-item">&middot;</li>
-                  <li class="list-inline-item">Vie privée</li>
+                  <li class="list-inline-item"><a href="#">Vie privée</a></li>
                   <li class="list-inline-item">&middot;</li>
-                  <li class="list-inline-item">Condition d'utilisation</li>
+                  <li class="list-inline-item"><a href="#">Condition d'utilisation</a></li>
                 </ul>
               </div>
             </div>
