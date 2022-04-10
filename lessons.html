@@ -50,12 +50,17 @@
         </div>
       </div>
       <div class="container">
-        <div class="row">
-          <div class="col text-center">
+        <div class="row my-3">
+          <div class="col">
             <p class="h1">Cours</p>
           </div>
         </div>
-        <div class="row">
+        <div class="row mb-3">
+          <div class="col">
+            <input class="form control" id="searchInput" type="text" placeholder="search..">
+          </div>
+        </div>
+        <div class="row" id="lessonList">
           <div class="col-12 col-lg-4">
             <div class="card mb-4 mb-lg-0 border-dark">
               <img class="card-img-top" src="outils/cours/css.jpeg" alt="animation CSS moderne">
@@ -103,5 +108,15 @@
           </div>
         </div>
       </div>
+      <script>
+        $(document).ready(function(){
+           $("#searchInput").on("keyup", function() {
+              var value = $(this).val().toLowerCase();
+              $("#lessonList .col-12").filter(function() {
+                 $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+              });
+           });
+        });
+     </script>
     </body>
 </html>
